@@ -1,8 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import ByRoute from "./components/ByRoute";
-import ByStopNum from "./components/ByStopNum";
+import ByRoute from "./components/ByRoute/ByRoute";
+import ByStopNum from "./components/ByStopNum/ByStopNum";
 
 function App() {
   return (

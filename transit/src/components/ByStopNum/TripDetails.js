@@ -12,8 +12,6 @@ const TripDiv = styled.div`
 const StopInfo = styled.p`
   color: #626462;
   font-size: 1.2rem;
-  text-align: left;
-  align-items: flex-start;
 `;
 
 const TripDetails = ({ trip }) => {
