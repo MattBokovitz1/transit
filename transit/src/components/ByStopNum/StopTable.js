@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import TripDetails from "./TripDetails";
 
-const StopCard = styled.div`
+const Card = styled.div`
   margin: 3% auto;
   padding: 1% 0;
   display: flex;
@@ -40,7 +40,7 @@ const StopTable = (props) => {
   return (
     <div>
       {data ? (
-        <StopCard>
+        <Card>
           <TripDiv>
             <StopName>{data.stops[0].description}</StopName>
             <StopName>Stop #: {data.stops[0].stop_id}</StopName>
@@ -53,7 +53,7 @@ const StopTable = (props) => {
           {data.departures.slice(0, 3).map((trip) => {
             return <TripDetails key={trip.id} trip={trip} />;
           })}
-        </StopCard>
+        </Card>
       ) : (
         <SearchInstructions>Search your stop for route info</SearchInstructions>
       )}
